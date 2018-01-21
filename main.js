@@ -23,7 +23,7 @@ var hangman = {
         message: "Welcome.  Lets start playing loser!!"
     }]).then(function(answer) {
             that.newGame();
-        }
+        });
 
         newGame: function() {
             if(this.guessesRemaining === 8) {
@@ -56,7 +56,7 @@ var hangman = {
                     }
                 }
             }]).then(function(ltr) {
-                //toLpperCase because words in word bank are all lower
+                //toLowerCase because words in word bank are all lower
                 var letterReturned = (ltr.chosenLtr).toLowerCase();
                 //adds to the guessedLetters array if it isn't already there
                 var guessedAlready = false;
@@ -110,6 +110,7 @@ var hangman = {
             });
         }
     }
+}
 
     hangman.startGame();
 
