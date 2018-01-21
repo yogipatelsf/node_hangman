@@ -1,0 +1,23 @@
+{
+  "name": "yogi_hangman",
+  "version": "1.0.0",
+  "description": "node hangman",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yogipatelsf/node_hangman.git"
+  },
+  "keywords": [
+    "hangman",
+    "node"
+  ],
+  "author": "yogi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yogipatelsf/node_hangman/issues"
+  },
+  "homepage": "https://github.com/yogipatelsf/node_hangman#readme"
+}
