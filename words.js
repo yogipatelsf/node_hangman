@@ -1,0 +1,1 @@
+var teams = [warriors, trojans, cavaliars, patriots, giants, sharks, dodgers, bruins, yankees, earthquakes];
