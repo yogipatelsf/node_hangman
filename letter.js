@@ -1,20 +1,22 @@
-var Letter = function(ltr) {
+//creates the Letter object
 
-    this.letter = ltr;
+var Letter = function(char){
+    //converts guess to lowercase
+    this.charac = char.toLowerCase();
 
     this.appear = false;
-
-    this.showWord = function() {
-        if(this.letter == ' ' ){
+    //show the letter in CLI
+    this.letterRender = function(){
+        if(this.appear){
+            return this.charac;
+        } else if (this.charac === " "){
             this.appear = true;
-            return '  ';
-        }if(this.appear === false){
-            return ' _ ';
-        } else{
-            return this.letter;
+            return this.charac;
+        } else {
+            //returns underscore if guess was incorrect
+            return " _ ";
         }
-
     };
 };
 
-module.exports = Letter;
+exports.Letter = Letter;
